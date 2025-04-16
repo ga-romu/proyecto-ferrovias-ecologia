@@ -107,6 +107,9 @@ Recomendaciones para QGIS:
     - Categoría de área protegida
 3. Usar SRID correspondiente al exportar
 
+### 📄 Licencia
+
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Datos abiertos con atribución
 
 ### 🤝 Cómo Contribuir
 
