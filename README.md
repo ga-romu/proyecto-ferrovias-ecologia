@@ -47,7 +47,7 @@ WHERE EXISTS (
 
 ### 2. Atractivos Turísticos en Radio de 500m
 
-Metodología: Buffer de proximidad con transformación UTM para precisión métrica.
+**Metodología**: Buffer de proximidad con transformación UTM para precisión métrica.
 
 ```sql
 CREATE TABLE aturistico_tren_500m AS
@@ -68,7 +68,7 @@ JOIN red_ferroviaria r
 
 ### 3. Corredores Ecológicos (10km buffer)
 
-Aporte: Identificación de áreas protegidas atravesadas por la ferrovía
+**Aporte**: Identificación de áreas protegidas atravesadas por la ferrovía
 ```sql
 CREATE TABLE corredores_protegidos10k AS
 SELECT 
@@ -87,9 +87,9 @@ GROUP BY s.nombre, s.region, s.geom;
 
 Requisitos mínimos:
 
-PostgreSQL 13+ con PostGIS 3.2+
-Extensión postgis activada
-SRID consistentes (4326, 32719, 3857)
+- PostgreSQL 13+ con PostGIS 3.2+
+- Extensión postgis activada
+- SRID consistentes (4326, 32719, 3857)
 
 ```sql 
 CREATE EXTENSION postgis;
@@ -100,11 +100,18 @@ SELECT PostGIS_full_version();
 
 Recomendaciones para QGIS:
 
-Cargar capas resultantes
-Estilizar por:
-Tipo de piso vegetacional
-Distancia a ferrovías
-Categoría de área protegida
-Usar SRID correspondiente al exportar
+1. Cargar capas resultantes
+2. Estilizar por:
+    - Tipo de piso vegetacional
+    - Distancia a ferrovías
+    - Categoría de área protegida
+3. Usar SRID correspondiente al exportar
+
+
+### 🤝 Cómo Contribuir
+
+1. Reportar issues con datos o análisis
+2. Proponer mejoras a las consultas
+3. Agregar nuevos análisis espaciales
 
 
