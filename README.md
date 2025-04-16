@@ -1,4 +1,9 @@
-# Análisis Geoespacial: Red Ferroviaria y Áreas Naturales de Chile
+# Análisis Geoespacial: Red Ferroviaria, Paisaje y Turismo en Chile
+
+![](./resultados/patrimoniopaisajetren-gr.jpeg)
+
+
+
 
 ## 📋 Descripción
 Proyecto de análisis espacial que estudia la relación entre la infraestructura ferroviaria y los ecosistemas chilenos mediante PostgreSQL/PostGIS. Incluye:
